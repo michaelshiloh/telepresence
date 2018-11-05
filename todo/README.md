@@ -34,6 +34,7 @@ Software
 
 1. write code
 1.1. minimal viable project: simple web page allows users to navigate robot, no audio/video
+1.1. make the account with ngrok so that we can publish a permanent URL
 
 Time permitting
 
