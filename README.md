@@ -15,3 +15,10 @@ The purpose of this project is to create a simple telepresence platform that can
 
 
 My hope is that by creating an accessible platform outside of traditional engineering laboratories the range of projects and applications may be expanded
+
+Journal (maybe this will move elsewhere later)
+______
+
+Monday November 5
+
+craig is using this https://www.hackster.io/bportaluri/web-controlled-led-animations-with-raspberry-pi-and-arduino-112025 to create his alexa controlled neopixel displays. inside is a raspberry pi and arduino, same as us. i took a look at the rpi software (https://github.com/bportaluri/AlaWeb) and it's a python program running on top of flask. flask is a super light weight web server framework. AlaWeb has all this fancy stuff for controlling animated light displays, but it should be possible to remove that and just use the framework to create navigation buttons that will send the commands to arduino (forward, reverse, turn left, turn right) which will then activate the motors appropriately. I'll look at this further tomorrow.
