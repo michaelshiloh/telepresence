@@ -1,3 +1,22 @@
+/*
+// first attempt at terribly simple web control of motors
+// based on software serial example (built-in to Arduino) 
+// to communicate with motor controller and interaction engine
+// to communicate with rPi
+
+Modification log
+
+November 6 2018 - written by Michael Shiloh
+	Basic proof of concept: pressing the "LED On" button on the web page
+	turns on the motor, but there is a bug in that pressing "LED Off" 
+	causes both motors to stutter and not turn off. Also upon reset both 
+	motors stutter.
+
+	oh i just noticed that pin 11 is used for both transmission and for 
+	a pushbutton (which is not used) which is probably causing conflict
+
+*/
+
 #include <SoftwareSerial.h>
 
 SoftwareSerial softwareSerial(10, 11); // RX, TX
