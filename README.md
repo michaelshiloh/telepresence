@@ -19,6 +19,70 @@ My hope is that by creating an accessible platform outside of traditional engine
 Journal (maybe this will move elsewhere later)
 ______
 
+Tuesday November 6
+
+Easier! use the [interaction engine](https://github.com/nikmart/interaction-engine)
+
+first, connect rpi to nyu network using [Jack's document](https://jackbdu.wordpress.com/2017/04/01/interactive-media-arts-capstone-technical-documentation/)  
+
+
+1. Get the MD4 hash of the password by running the command below:  
+
+    $ echo -n 'YOUR_REAL_PASSWORD' | iconv -t utf16le | openssl md4
+
+1. Open wpa_supplicant.conf with your favorite text editor:
+
+    $ sudo vi /etc/wpa_supplicant/wpa_supplicant.conf
+
+1. Append the following text to the file:
+
+    network={
+    ssid="nyu"
+    priority=1
+    proto=RSN
+    key_mgmt=WPA-EAP
+    pairwise=CCMP
+    auth_alg=OPEN
+    eap=PEAP
+    identity="the_netid"
+    password=hash:the_hashed_password
+    phase1="peaplabel=0"
+    phase2="auth=MSCHAPV2"
+    }
+
+1. Remember to run the following command to clean up history for security reason:
+
+    $ history -w    
+    $ history -d    
+
+
+
+next, set up an ssh server on the pi so I don't need to type everything there
+
+    Enter sudo raspi-config in a terminal window.  
+    Select Interfacing Options.  
+    Navigate to and select SSH.  
+    Choose Yes.  
+    Select Ok.  
+    Choose Finish.  
+
+now install interaction engine
+
+1. 
+
+
+______
+
 Monday November 5
 
-craig is using this https://www.hackster.io/bportaluri/web-controlled-led-animations-with-raspberry-pi-and-arduino-112025 to create his alexa controlled neopixel displays. inside is a raspberry pi and arduino, same as us. i took a look at the rpi software (https://github.com/bportaluri/AlaWeb) and it's a python program running on top of flask. flask is a super light weight web server framework. AlaWeb has all this fancy stuff for controlling animated light displays, but it should be possible to remove that and just use the framework to create navigation buttons that will send the commands to arduino (forward, reverse, turn left, turn right) which will then activate the motors appropriately. I'll look at this further tomorrow.
+craig is using this
+https://www.hackster.io/bportaluri/web-controlled-led-animations-with-raspberry-pi-and-arduino-112025
+to create his alexa controlled neopixel displays. inside is a raspberry pi and
+arduino, same as us. i took a look at the rpi software
+(https://github.com/bportaluri/AlaWeb) and it's a python program running on
+top of flask. flask is a super light weight web server framework. AlaWeb has
+all this fancy stuff for controlling animated light displays, but it should be
+possible to remove that and just use the framework to create navigation
+buttons that will send the commands to arduino (forward, reverse, turn left,
+turn right) which will then activate the motors appropriately. I'll look at
+this further tomorrow.  ______
