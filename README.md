@@ -36,19 +36,19 @@ first, connect rpi to nyu network using [Jack's document](https://jackbdu.wordpr
 
 1. Append the following text to the file:
 
-    network={
-    ssid="nyu"
-    priority=1
-    proto=RSN
-    key_mgmt=WPA-EAP
-    pairwise=CCMP
-    auth_alg=OPEN
-    eap=PEAP
-    identity="the_netid"
-    password=hash:the_hashed_password
-    phase1="peaplabel=0"
-    phase2="auth=MSCHAPV2"
-    }
+    network={   
+    ssid="nyu"   
+    priority=1   
+    proto=RSN   
+    key_mgmt=WPA-EAP   
+    pairwise=CCMP   
+    auth_alg=OPEN   
+    eap=PEAP   
+    identity="the_netid"   
+    password=hash:the_hashed_password   
+    phase1="peaplabel=0"   
+    phase2="auth=MSCHAPV2"   
+    }  
 
 1. Remember to run the following command to clean up history for security reason:
 
