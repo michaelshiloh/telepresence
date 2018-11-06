@@ -44,8 +44,9 @@ first, connect rpi to nyu network using [Jack's document](https://jackbdu.wordpr
     pairwise=CCMP   
     auth_alg=OPEN   
     eap=PEAP   
-    identity="the_netid"   
-    password=hash:the_hashed_password   
+    identity="the_netid"                  <<<<<<<<<<<<<<change this     
+    password=hash:the_hashed_password     <<<<<<<<<<<<<<change     
+		this
     phase1="peaplabel=0"   
     phase2="auth=MSCHAPV2"   
     }  
@@ -68,7 +69,45 @@ next, set up an ssh server on the pi so I don't need to type everything there
 
 now install interaction engine
 
-1. 
+1.  git clone https://github.com/nikmart/interaction-engine  
+1.  upload the helloYouSketch.ino you your Arduino   
+
+1.1. do this on laptop rather than try to get arduino running on rpi
+
+1. install node
+
+    sudo apt-get install node
+
+1. run server, using correct port
+
+    node server.js /dev/ttyACM0 
+
+1. failed. need to install nodejs and express i did both of these and i'm not sure which one privided the right thing
+
+    curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
+    wget https://nodejs.org/dist/v10.13.0/node-v10.13.0-linux-armv7l.tar.xz
+
+1. For some reason 
+
+    /usr/sbin/node: No such file or directory
+
+		but node is correctly installed in /usr/bin so be explicit
+
+   /usr/bin/node server.js /dev/ttyACM0
+
+
+1. and now can visit from my phone and turn led on and off!
+
+		10.225.41.191:8000
+
+1. So, what remains to do?
+
+
+1.1. either get arduino to talk to motor controller, or get rpi to talk
+directly to motor controller
+
+1.1. add another two buttons
+
 
 
 ______
