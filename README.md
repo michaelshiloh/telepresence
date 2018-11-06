@@ -106,7 +106,11 @@ now install interaction engine
 1.1. either get arduino to talk to motor controller, or get rpi to talk
 directly to motor controller
 
-1.1. add another two buttons
+1.1. modify html code to have four buttons for navigation 
+
+1.1. if we use arduino, create rpi/arduino protocol
+
+1.1. 
 
 
 
