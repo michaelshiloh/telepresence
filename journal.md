@@ -166,6 +166,63 @@ so try this
 
 	https://www.pyimagesearch.com/2017/09/04/raspbian-stretch-install-opencv-3-python-on-your-raspberry-pi/
 
+it finished successfully!
+
+ok, now
+
+    cd video_streaming_with_flask_example/
+		pip install flask
+		python main.py
+
+damn!
+
+		ImportError: No module named cv2
+
+and indeed, it fails the test at the end of the install:
+
+		pi@raspberrypi:~ $ source ~/.profile
+		pi@raspberrypi:~ $ workon cv2
+		(cv2) pi@raspberrypi:~ $ python
+		Python 2.7.13 (default, Sep 26 2018, 18:42:22)
+		[GCC 6.3.0 20170516] on linux2
+		Type "help", "copyright", "credits" or "license" for more information.
+		>>> import cv2
+		Traceback (most recent call last):
+			File "<stdin>", line 1, in <module>
+		ImportError: No module named cv2
+
+just to be sure
+
+    ls -l /usr/local/lib/python2.7/site-packages/cv2.so
+
+yes it's real
+
+this helped
+
+		export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
+
+Oh! It works!
+
+		pi@raspberrypi:~/video_streaming_with_flask_example $ python main.py 
+		 * Serving Flask app "main" (lazy loading)
+		 * Environment: production
+			 WARNING: Do not use the development server in a production environment.
+			 Use a production WSGI server instead.
+		 * Debug mode: on
+		 * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+		 * Restarting with stat
+		 * Debugger is active!
+		 * Debugger PIN: 264-815-227
+		10.225.50.110 - - [08/Nov/2018 08:23:16] "GET / HTTP/1.1" 200 -
+		10.225.50.110 - - [08/Nov/2018 08:23:16] "GET /video_feed HTTP/1.1" 200 -
+		10.225.50.110 - - [08/Nov/2018 08:23:17] "GET /favicon.ico HTTP/1.1" 404 -
+
+
+so then I just browse to the rpi (10.225.41.191) at port 5000
+
+	10.225.41.191:5000 and there is the video!
+
+this is with a webcam. It does not like the pi camera. leave this for later.
 
 
 ..........

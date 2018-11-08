@@ -1,7 +1,7 @@
-Later I'll upload the orders so part numbers will be included
+# Parts list for the telepresence robot
 
 
-Adafruit
+## Adafruit
 
 Raspberry Pi model 3B+
 Raspberry Pi camera
@@ -11,7 +11,7 @@ USB console thingy
 level shifters for interfacing with Arduino
 
 
-SuperDroidRobots
+## SuperDroidRobots
 
 1. Motors
 1. Bearings
@@ -19,3 +19,9 @@ SuperDroidRobots
 1. Wheels
 1. Shafts
 1. Shaft collars
+
+
+## Misc
+
+1. Three portable chargers (USB battery packs)
+1. 12V sealed lead acid battery (gel cell)
