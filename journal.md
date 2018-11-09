@@ -316,4 +316,26 @@ all:
 
 
 
+.....
 
+yet another attempt using 
+
+	http://jamespoole.me/2016/04/29/web-controlled-robot-with-video-stream/
+
+first had to get motion to work. that required changes to
+/etc/motion/motion.conf 
+
+I also did
+
+	sudo systemctl enable motion
+
+but I don't know if that was necessary. Next I did
+
+	git clone https://github.com/JamesPoole/WebControlledRobot
+
+that gives me buttons but no video.
+
+ah but that wants motion to work locally and i have it working removely
+so i need to edit
+
+	
