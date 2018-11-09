@@ -97,3 +97,9 @@ modify it to say
 Note that now you have to run as root:
 
 		sudo python main.py
+
+### To get on a WPA WiFi network, follow
+[these](https://jackbdu.wordpress.com/2017/04/01/interactive-media-arts-capstone-technical-documentation/)
+instructions
+
+
