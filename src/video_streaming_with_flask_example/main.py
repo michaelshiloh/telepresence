@@ -35,9 +35,21 @@ def gen(camera):
 def video_feed():
     return Response(gen(VideoCamera()),
                     mimetype='multipart/x-mixed-replace; boundary=frame')
-app.route('/command_send', methods=['POST'])
-def cmd():
-    print "sending message from form"
-    return render_template('index.html') 
+
+@app.route('/forward', methods=['POST'])
+def forward():
+    return "cool, you are moving forward"
+    # return render_template('index.html')
+
+@app.route('/left', methods=['POST'])
+def left():
+    return "cool, you are moving left"
+    # return render_template('index.html')
+
+@app.route('/right', methods=['POST'])
+def right():
+    return "cool, you are moving right"
+    # return render_template('index.html')
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80, debug=True)
