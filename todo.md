@@ -1,50 +1,32 @@
 # Task list for telepresence robot
 
-High Priority
+High Priority (in rough order)
 
-Mechanical
+1. Document video streaming procedure (roughly at least)
+1. Move streaming video to port 80 so easier to find
+1. combine streaming video with navigation control
+1. Mount camera
+1. Mount battery holder
+1. Replace and charge battery
+1. Put something useful on screen such as URL for streaming video
 
-1. finish constructing platform  
-1. attach all logic hardware:  
-1.1. rpi  
-1.1. camera (ideally mounted near screen)  
-1.1. powered speaker  
-1.1. microphone  
-1.1. arduino  
-1. enclosure for logic electronics
-1. enclosure for motor controller
-1. place to hold the batteries so they can be removed for charging
+Medium priority
 
-Wiring
-1. logic hardware
-1. power
-1. power switches  
-1.1. motor power  
-1.1. arduino and display power   
-1.1. rPi probably doesn't need a power switch because it will be on the portable USB charger  
-1.1. Speaker power, unless there is a switch on the speaker or it's the same power as the arduino and display  
+1. get sound working (don't do this until streaming will support it)
+1. Move motor controller to increase access and airflow
+1. make the account with ngrok so that we can publish a permanent URL  
+1. make a nameplate
 
-Power
-
-1. power system
-1.1. 12v gel cell for motors  
-1.1. portable USB charger for rPI  
-1.1. 9-12 v for display and arduino, either another gel cell or a portable USB charger with a 12V output  
-1.1. whatever the speakers need, ideally the same gel cell or a portable USB charger as the arduino and display  
-
-Software
-
-1. write code
-1.1. minimal viable project: simple web page allows users to navigate robot, no audio/video  
-1.1. make the account with ngrok so that we can publish a permanent URL  
 
 Time permitting
 
-1. Add single direction audio/video, so a remote user can see and hear what the robot is seeing and hearing
-1. next step: add the second direction, so the remote user can be seen on the robot's screen and heard on the speakers
+1. Switch for logic might be useful
+1. Add audio to streaming video
+1. get bidirectional A/V (i.e. video conferencing)
 
-nice to have
+Low priority
 
 1. move wheels to the front and casters to the back so it doesn't wobble
-1. monitor power and feed to arduino analog inputs to report to rPi
+1. monitor power with arduino analog inputs to report to rPi and web page
+1. add ramp to home platform so robot can drive onto it
 
