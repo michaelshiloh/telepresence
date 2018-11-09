@@ -80,3 +80,20 @@ and then run the video streaming example
 		python main.py
 
 This streams on port 5000 so browse there to see the video
+
+#### To move stream video on port 80
+
+		cd video_streaming_with_flask_example
+		vi main.py
+
+the last line says
+
+    app.run(host='0.0.0.0', debug=True)
+
+modify it to say
+
+    app.run(host='0.0.0.0', port=80, debug=True)
+
+Note that now you have to run as root:
+
+		sudo python main.py

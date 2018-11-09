@@ -2,7 +2,6 @@
 
 High Priority (in rough order)
 
-1. Document video streaming procedure (roughly at least)
 1. Move streaming video to port 80 so easier to find
 1. combine streaming video with navigation control
 1. Mount camera
