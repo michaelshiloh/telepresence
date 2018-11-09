@@ -103,3 +103,18 @@ Note that now you have to run as root:
 instructions
 
 
+### To blink an LED on Arduino via serial port from Raspberry Pi using Python
+
+Put this in a python file e.g. testSerial.py
+
+    import serial, time
+    arduino = serial.Serial('/dev/ttyACM0', 9600, timeout=.1)
+
+    while True:
+        print "On"
+        arduino.write("H")
+        time.sleep(1) 
+        print "Off"
+        arduino.write("L")
+        time.sleep(1) 
+
