@@ -1,6 +1,6 @@
 # Journal
 
-## Monday November 5
+## Monday November 5 2018
 
 craig is using this
 https://www.hackster.io/bportaluri/web-controlled-led-animations-with-raspberry-pi-and-arduino-112025
@@ -14,7 +14,7 @@ buttons that will send the commands to arduino (forward, reverse, turn left,
 turn right) which will then activate the motors appropriately. I'll look at
 this further tomorrow.  ______
 
-## Tuesday November 6
+## Tuesday November 6 2018
 
 Easier! use the [interaction engine](https://github.com/nikmart/interaction-engine)
 
@@ -105,12 +105,8 @@ directly to motor controller
 
 1.1. if we use arduino, create rpi/arduino protocol
 
-1.1. 
 
-
-
-
-## Thursday November 8
+## Thursday November 8 2018
 
 Aaron suggests
 
@@ -260,5 +256,64 @@ and to start ngrok do
 which starts a tunnel from http (port 80) to port 8000
 
 now if i also want to allow ssh can i run two ngrok sessions?
+
+
+## Friday November 9 2018
+
+moved python/flask streaming webcam to port 80. this will allow ngrok to
+function. procedure is described in "procedures.md"
+
+added a button, although it doesn't do anything yet. this was simply
+adding this to the body in templates/index.html
+
+		<button>Left</button>
+
+now I need to figure out how to call a function
+
+It looks like this line does that:
+
+	<button onclick="servos.move('T', -10)">Up</button>
+
+and then there is a script below. I'm not sure how much I need so let's use it
+all:
+
+	<script>
+		var servos;
+		$( document ).ready(function() {
+			servos = moveServos();
+		});
+		function moveServos() {
+			// Store some settings, adjust to suit
+			var panPos = 70, 
+				tiltPos = 90, 
+				tiltMax = 170, 
+				tiltMin = 45, 
+				panMax = 170, 
+				panMin = 20;
+			return {
+				move:function(servo, adjustment) {
+					var value;
+					if(servo == 'P') {
+						if(!((panPos >= panMax && adjustment > 0) || (panPos <= panMin && adjustment < 0))) {
+							// Still within allowed range, "schedule" the movement
+							panPos += adjustment;
+						}
+						value = panPos + 'P';
+					}
+					else if(servo == 'T') {
+						if(!((tiltPos >= tiltMax && adjustment > 0) || (tiltPos <= tiltMin && adjustment < 0))) {
+							// Still within allowed range, "schedule" the movement
+							tiltPos += adjustment;
+						}
+						value = tiltPos + 'T';
+					}
+					// Use AJAX to actually move the servos
+					$.get('http://PI_IP_ADDRESS/servos.rpy?value=' + value);
+				},
+			}
+		}
+	</script>
+
+
 
 
