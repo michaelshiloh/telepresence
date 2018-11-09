@@ -13,7 +13,7 @@
 # 1. Install Python dependencies: cv2, flask. (wish that pip install works like a charm)
 # 2. Run "python main.py".
 # 3. Navigate the browser to the local webpage.
-from flask import Flask, render_template, Response, request
+from flask import Flask, render_template, Response, request, jsonify
 from camera import VideoCamera
 
 import serial
@@ -36,20 +36,17 @@ def video_feed():
     return Response(gen(VideoCamera()),
                     mimetype='multipart/x-mixed-replace; boundary=frame')
 
-@app.route('/forward', methods=['POST'])
-def forward():
-    return "cool, you are moving forward"
+@app.route('/userInput', methods=['GET'])
+def userInput():
+    print "request came in"
+
+    theCommand = request.args.get('command')
+    print theCommand
+
+    data = {"data": "woohoo"}
+    return jsonify(data)
     # return render_template('index.html')
 
-@app.route('/left', methods=['POST'])
-def left():
-    return "cool, you are moving left"
-    # return render_template('index.html')
-
-@app.route('/right', methods=['POST'])
-def right():
-    return "cool, you are moving right"
-    # return render_template('index.html')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80, debug=True)

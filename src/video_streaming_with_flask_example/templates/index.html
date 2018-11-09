@@ -1,22 +1,46 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Video Streaming Demonstration</title>
   </head>
   <body>
     <h1>Video Streaming Demonstration</h1>
-    <form action="{{ url_for('forward') }}" method="post">
-      <input type="submit" value="Forward">
-    </form>
-
-    <form action="{{ url_for('left') }}" method="post">
-      <input type="submit" value="Left">
-    </form>
-
-    <form action="{{ url_for('right') }}" method="post">
-      <input type="submit" value="Right">
-    </form>
+<img id="bg" src="{{ url_for('video_feed') }}">
+    <button id="button-left">LEFT</button>
+    <button id="button-right">RIGHT</button>
   </body>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
   <script>
+
+  function sendMsgToServer(msg){
+    console.log("Sending: " + msg);
+  	$.ajax({
+  		url: "/userInput?command=" + msg,
+  		type: 'GET',
+  		dataType: 'json',
+  		error: function(data){
+  			console.log(data);
+  			alert("Oh No! Try a refresh?");
+  		},
+  		success: function(data){
+  			console.log("WooHoo!");
+  	   }
+     });
+   }
+
+
+  $('#button-left').click(function(){
+  	sendMsgToServer("left")
+  });
+
+  $('#button-right').click(function(){
+  	sendMsgToServer("right");
+  });
+
     var servos;
     servos = moveServos();
     function moveServos() {
