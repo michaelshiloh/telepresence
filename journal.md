@@ -437,3 +437,87 @@ video works now but I didn't do anything
 now run the python script -- it's ok
 
 next, add reverse. added to index.html, now add to app.py
+
+
+ok i'm confused. time to document the motion:
+
+arduino:
+
+	F = move Forward
+	R = move Reverse
+	E = turn lEft
+	I = turn rIght
+	anything else = stop
+
+index.html
+
+	1 = left
+	2 = forward
+	3 = right
+	4 = reverse
+	5 = stop
+
+app.py
+
+	1 = E
+	2 = F
+	3 = I
+	4 = R
+	else = S
+
+
+ok it works -- quickly scp files and commit
+
+save this to save time
+
+	cd /home/michael/gits/mine/telepresence/src/WebControlledRobot
+	scp pi@10.225.41.191:WebControlledRobot/app.py .
+	scp pi@10.225.41.191:WebControlledRobot/templates/index.html templates
+
+right-o. what was next?
+
+1. test that it starts the programs automatically
+2. ngrok
+3. automatically find arduino usb port
+4. center the stop and reverse buttons (low priority)
+5. ask craig if can avoid redrawing screen after pressing a button
+
+this seems to work but it's not in the running code yet:
+
+	arduino_ports = [
+			p.device
+			for p in serial.tools.list_ports.comports()
+			if 'Arduino' in p.description
+	]
+
+	def findArduino():
+		if not arduino_ports:
+			raise IOError("No Arduino found")
+		if len(arduino_ports) > 1:
+			warnings.warn('Multiple Arduinos found - using the first')
+		print("found arduino at")
+		print(arduino_ports[0])
+		arduino = serial.Serial(arduino_ports[0])
+
+rebooting to test if programs start automatically
+
+yep it's fine
+
+ok on to ngrok
+
+1. i paid the $60 and upgraded
+2. got my token, and ran this on the pi:
+
+     ./ngrok authtoken 39BX6nY7cqFsyf53sHWyJ_4xNW8tFh8c1RpCjVB9bLX 
+
+I think now I can automatically use ngrok with the custom domain
+
+	ngrok http -subdomain=robonica 80
+
+which should tunnel port 80 (i.e. http) of robonica.ngrok.io to the robot at
+port 80
+
+(oh and by the way I need to move the python app to port 80 - that's in
+app.py)
+
+and if this works then start ngrok on boot 
