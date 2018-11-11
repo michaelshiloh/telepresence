@@ -512,7 +512,7 @@ ok on to ngrok
 
 I think now I can automatically use ngrok with the custom domain
 
-	ngrok http -subdomain=robonica 80
+	./ngrok http -subdomain=robonica 80
 
 which should tunnel port 80 (i.e. http) of robonica.ngrok.io to the robot at
 port 80
@@ -521,3 +521,63 @@ port 80
 app.py)
 
 and if this works then start ngrok on boot 
+
+oh duh i have the cardboard covering the camera...
+
+uh oh ngrok tunnel doesn't pass the video feed...
+
+I can create an ngrok config file to bring up multiple tunnels 
+I think if I tunnel the video as well it should be OK BUT
+I ngrok will only tunnel one of three protocols: tcp, http, and tls
+
+but http will always look for port 80 and my image server can not be on port
+80 because the web server is on that port and i can't have two servers on one
+port
+
+but ngrok does have an address field. how does it work?
+
+now
+			./ngrok http -subdomain=robonica 80
+reports
+			http://robonica.ngrok.io -> localhost:80
+	
+
+but i don't think that helps
+
+ok forget ngrok
+
+tinyurl was able map the internal ip address
+
+	tinyurl.com/robonica
+
+but the video feed dies sometimes. 
+
+	systemctl is-active motion
+
+shows it's active. let's try stopping and starting
+
+	sudo service motion stop
+	sudo service motion start
+
+oh wait it's detecting and saving all motion! can prevent saving motion by
+starting it wtih 
+
+	motion -m
+
+but how do I set that in the configuration file? perhaps this
+
+	vi /etc/motion/motion.conf
+	# target_dir /var/lib/motion
+	target_dir /dev/null
+
+restart service and see
+
+	tail -f /var/log/motion/motion.log
+	ls /var/lib/motion
+
+so far so good. now let's see if it stays up longer.
+
+so need to copy this config file back to git
+
+	cd /home/michael/gits/mine/telepresence/src/WebControlledRobot
+	scp pi@10.225.41.191:/etc/motion/motion.conf .

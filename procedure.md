@@ -158,6 +158,13 @@ but I found it necessary to make the following changes to
 		---
 		> webcontrol_localhost off
 
+Important! Turn off saving motion images or it will save every frame that
+differs which is a lot :
+
+	# target_dir /var/lib/motion
+  target_dir /dev/null
+
+
 and proceed with James' instructions. After cloning James' WebControlledRobot
 repository,
 we added sending a byte to the arduino whenever a button is pressed, in

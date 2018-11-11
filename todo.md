@@ -1,20 +1,17 @@
 # Task list for telepresence robot
 
-High Priority (in rough order)
+Top Priority
 
-1. Move streaming video to port 80 so easier to find
-1. combine streaming video with navigation control
-1. Mount camera
-1. Mount battery holder
-1. Replace and charge battery
-1. Put something useful on screen such as URL for streaming video
+1. Sign explain what the project is
+1. Put something useful on screen    
+1. Replace and charge 12V battery   
+1. Ume's idea of a control station
+
 
 Medium priority
 
-1. get sound working (don't do this until streaming will support it)
-1. Move motor controller to increase access and airflow
-1. make the account with ngrok so that we can publish a permanent URL  
-1. make a nameplate
+1. Mount camera   
+1. Mount battery holder   
 
 
 Time permitting
@@ -25,7 +22,12 @@ Time permitting
 
 Low priority
 
+1. navigation: how to identify who is controlling it (how indeed?)   
 1. move wheels to the front and casters to the back so it doesn't wobble
 1. monitor power with arduino analog inputs to report to rPi and web page
 1. add ramp to home platform so robot can drive onto it
+1. clean up the code   
+1.1. remove the servo stuff  
+1. get sound working (don't do this until streaming will support it)
+1. Move motor controller to increase access and airflow
 
