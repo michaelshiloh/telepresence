@@ -18,6 +18,10 @@
 	Nov 9 2018 - Michael Shiloh
 	implemented decent robot control
 
+  Nov 10 2018 - Michael Shiloh
+  Turn off motors after short delay so if web client disconnects
+  robot doesn't keep moving
+
 */
 
 #include <SoftwareSerial.h>
@@ -70,19 +74,23 @@ void loop() {
         break;
       case 'F':
         moveForward (80);
-        delay(800);
+        //delay(800);
+        //stopBothMotors ();
         break;
       case 'R':
         moveReverse (80);
-        delay(800);
+        //delay(800);
+        //stopBothMotors ();
         break;
       case 'E':
         turnLeft (80);
-        delay(500);
+        //delay(500);
+        //stopBothMotors ();
         break;
       case 'I':
         turnRight (80);
-        delay(500);
+        //delay(500);
+        //stopBothMotors ();
         break;
       default:
         stopBothMotors ();

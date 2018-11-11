@@ -3,6 +3,27 @@
 
 ### Install Rasperian 
 
+### To get on a WPA WiFi network, follow
+[these](https://jackbdu.wordpress.com/2017/04/01/interactive-media-arts-capstone-technical-documentation/)
+instructions
+
+
+### To blink an LED on Arduino via serial port from Raspberry Pi using Python
+
+Put this in a python file e.g. testSerial.py
+
+    import serial, time
+    arduino = serial.Serial('/dev/ttyACM0', 9600, timeout=.1)
+
+    while True:
+        print "On"
+        arduino.write("H")
+        time.sleep(1) 
+        print "Off"
+        arduino.write("L")
+        time.sleep(1) 
+
+
 ### Install Interaction Engine (Thanks to Nik Martelaro!)
 
     git clone https://github.com/nikmart/interaction-engine.git
@@ -37,10 +58,7 @@ at this port). The URL for this tunnel will be displayed e.g.
     cd interaction-engine
     node server.js /dev/ttyACM0 
 
-### to install video streaming
-
-
-Install the Video Streaming with Flask Example by Eric Chio:
+### To Install the Video Streaming with Flask Example by Eric Chio
 
     git clone https://github.com/log0/video_streaming_with_flask_example.git
 
@@ -98,23 +116,59 @@ Note that now you have to run as root:
 
 		sudo python main.py
 
-### To get on a WPA WiFi network, follow
-[these](https://jackbdu.wordpress.com/2017/04/01/interactive-media-arts-capstone-technical-documentation/)
-instructions
+this looked great, but we couldn't figure out how to get 
+buttons to respond, probably since the video stream is in a tight
+while loop. (if we commented out the video while loop, buttons worked fine)
+so instead we researched other webcams with controls and found James Poole's
+[Raspberry Pi Web Controlled Robot With Video
+Stream](http://jamespoole.me/2016/04/29/web-controlled-robot-with-video-stream/)
+which worked, so see procedure below
 
+### To install James Poole's
+[Raspberry Pi Web Controlled Robot With Video
+Stream](http://jamespoole.me/2016/04/29/web-controlled-robot-with-video-stream/)
 
-### To blink an LED on Arduino via serial port from Raspberry Pi using Python
+Install motion the usual way
 
-Put this in a python file e.g. testSerial.py
+    sudo apt-get install motion
 
-    import serial, time
+but I found it necessary to make the following changes to 
+
+    /etc/motion/motion.conf
+
+		$ diff stock_motion.conf modified_motion.conf 
+		11c11
+		< daemon off
+		---
+		> daemon on
+		107c107
+		< framerate 2
+		---
+		> framerate 90
+		501c501
+		< stream_maxrate 1
+		---
+		> stream_maxrate 100
+		504c504
+		< stream_localhost on
+		---
+		> stream_localhost off
+		537c537
+		< webcontrol_localhost on
+		---
+		> webcontrol_localhost off
+
+and proceed with James' instructions. After cloning James' WebControlledRobot
+repository,
+we added sending a byte to the arduino whenever a button is pressed, in
+app.py:
+
+    import serial
     arduino = serial.Serial('/dev/ttyACM0', 9600, timeout=.1)
+    ...
+    if changePin == 1:
+			arduino.write("F")
+    ...
 
-    while True:
-        print "On"
-        arduino.write("H")
-        time.sleep(1) 
-        print "Off"
-        arduino.write("L")
-        time.sleep(1) 
+finally, we followed Quintin change to index.html that will always use the local server ip fork [here](https://github.com/qbalsdon/WebControlledRobot/blob/feature/index_use_local_ip/templates/index.html)
 

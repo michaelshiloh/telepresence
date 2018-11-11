@@ -335,7 +335,105 @@ but I don't know if that was necessary. Next I did
 
 that gives me buttons but no video.
 
-ah but that wants motion to work locally and i have it working removely
-so i need to edit
+got it working! See changes in procedures and actual files
 
-	
+## Saturday November 10 2018
+
+bring up system and see if I can get multiple viewers of the video stream
+
+motion should start automatically. which port?
+
+	$ sudo netstat -alp | grep 8081
+	unix  3      [ ]         STREAM     CONNECTED     8081     384/lightdm
+
+well I don't know what that is but when I browse to 
+
+	http://10.225.41.191:8081/
+
+I get the video stream
+
+so now let's see if I can browse from many places
+
+well it's inconclusive. i could connect from many but it froze in all but the
+first after awhile
+
+now if i want to move that video stream to ngrok i need to put it on port 80.
+where is that controlled?
+
+	sudo vi /etc/motion/motion.conf
+	sudo service motion stop
+	sudo service motion start
+
+interesting it's not working. so perhaps i shouldn't worry about that now 
+put it back at 8081 and figure out ngrok - can fix that later.
+
+ok next up: ngrok
+actually next up: lunch
+and perhaps i should do ngrok from home since my ccard is there
+
+so next item was to bring up the other server automatically
+
+    python app.py
+
+now that's spitting out all kind of debugging so will that cause trouble? I
+don't know. let's try the simple way by putting it into /etc/rc.local
+
+    python /home/pi/WebControlledRobot/app.py
+
+and this is on port 8001
+
+why is it not stopping after the delay in arduino? with print i see i'm only
+sending one char.
+
+test using screen
+
+	sudo apt-get install screen
+	screen /dev/ttyACM0 9600
+
+to exit screen
+
+	<CTRL>A \
+
+indeed after sending one char it stays on forever. why is that? isn't my
+arduino code stopping after 30 msec? check the code. 
+
+oh duh. I delay, but I don't stop:
+
+	case 'E':
+        turnLeft (80);
+        delay(500);
+        break;
+
+my bad
+
+## Sunday November 11 2018
+
+today
+
+1. remove the delay - that slows things down. if the robot goes wild, someone
+	 has to flip the switch. possibly add an extension
+2. return the reverse button
+3. ngrok
+
+also I notice the disk is filling. might be time to get rid of stuff, if I'm
+sure we don't need it
+
+removed some stuff got it from 80% down to 73%
+
+removed delay, noticed that video feed is not running. wonder why. rebooted.
+
+how to handle arduino coming up on different USB port?
+
+oh did i remove the wrong video streaming stuff? No, that used the motion
+packet. Is motion running? How can I tell?
+
+	$ systemctl is-active motion
+	active
+
+also i keep getting logged out - what's up?
+
+video works now but I didn't do anything
+
+now run the python script -- it's ok
+
+next, add reverse. added to index.html, now add to app.py

@@ -22,7 +22,7 @@ def index():
 
 	return render_template('index.html')
 
-#recieve which pin to change from the button press on index.html
+#receive which pin to change from the button press on index.html
 #each button returns a number that triggers a command in this function
 #
 #Uses methods from motors.py to send commands to the GPIO to operate the motors
@@ -33,14 +33,19 @@ def reroute(changepin):
 
 	if changePin == 1:
 		arduino.write("F")
+                print("sending F")
 	elif changePin == 2:
 		arduino.write("E")
+                print("sending E")
 	elif changePin == 3:
 		arduino.write("I")
+                print("sending I")
 	elif changePin == 4:
-		arduino.write("H")
+		arduino.write("R")
+                print("sending R")
 	else:
 		arduino.write("S")
+                print("sending S")
 
 
 	response = make_response(redirect(url_for('index')))
