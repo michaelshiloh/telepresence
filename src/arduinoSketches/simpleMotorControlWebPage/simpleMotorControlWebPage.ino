@@ -53,23 +53,29 @@ void loop() {
   // read the character we receive on the serial port from the RPi
   if (Serial.available()) {
     inChar = (char)Serial.read();
+    Serial.print("Arduino: received character");
+    Serial.println(inChar);
 
     /*
-      H = pin 13 LED on
-      L = pin 13 LED  off
+      1 = pin 13 LED on
+      0 = pin 13 LED  off
       F = move Forward
-      R = move Reverse
-      E = turn lEft
-      I = turn rIght
+      B = move Backwards
+      L = turn lEft
+      R = turn rIght
       S = Stop
+    	+ = set forward motor speed faster
+    	- = set forward motor speed slower
     */
 
     switch (inChar) {
 
-      case 'H':
+      case '1':
+        Serial.println("Arduino: LED on");
         digitalWrite(LEDPin, HIGH);
         break;
-      case 'L':
+      case '0':
+        Serial.println("Arduino: LED off");
         digitalWrite(LEDPin, LOW);
         break;
       case 'F':
@@ -77,18 +83,28 @@ void loop() {
         //delay(800);
         //stopBothMotors ();
         break;
-      case 'R':
-        moveReverse (80);
+      case 'B':
+        moveBackwards(80);
         //delay(800);
         //stopBothMotors ();
         break;
-      case 'E':
+      case 'L':
         turnLeft (80);
         //delay(500);
         //stopBothMotors ();
         break;
-      case 'I':
+      case 'R':
         turnRight (80);
+        //delay(500);
+        //stopBothMotors ();
+        break;
+      case '+':
+        faster ();
+        //delay(500);
+        //stopBothMotors ();
+        break;
+      case '-':
+        slower ();
         //delay(500);
         //stopBothMotors ();
         break;
@@ -103,21 +119,25 @@ void loop() {
    1 = slow
 */
 void moveForward(int speed) {
+  Serial.println("Arduino: moveForward");
   controlMotor1(speed, MYFORWARD);
   controlMotor2(speed, MYFORWARD);
 }
 
-void moveReverse(int speed) {
+void moveBackwards(int speed) {
+  Serial.println("Arduino: moveBackwards");
   controlMotor1(speed, MYREVERSE);
   controlMotor2(speed, MYREVERSE);
 }
 
 void turnLeft(int speed) {
+  Serial.println("Arduino: turnLeft");
   controlMotor1(speed, MYFORWARD);
   controlMotor2(speed, MYREVERSE);
 }
 
 void turnRight(int speed) {
+  Serial.println("Arduino: turnRight");
   controlMotor1(speed, MYREVERSE);
   controlMotor2(speed, MYFORWARD);
 }
@@ -152,8 +172,8 @@ void controlMotor1(int speed, bool direction) {
     speed = constrain(speed, 1, 63);
   }
 
-  //  Serial.println("M1 speed = ");
-  //  Serial.println(speed);
+  Serial.print("Arduino: M1 speed = ");
+  Serial.println(speed);
 
   softwareSerial.write(speed);
 }
@@ -181,12 +201,21 @@ void controlMotor2(int speed, bool direction) {
     speed = constrain(speed, 193, 255);
   }
 
-  //  Serial.println("M2 speed = ");
-  //  Serial.println(speed);
+  Serial.print("Arduino: M2 speed = ");
+  Serial.println(speed);
 
   softwareSerial.write(speed);
 }
 
 void stopBothMotors() {
+  Serial.println("Arduino: stopBothMotors");
   softwareSerial.write((byte)0);
+}
+
+void faster() {
+  Serial.println("Arduino: faster");
+}
+
+void slower() {
+  Serial.println("Arduino: slower");
 }
