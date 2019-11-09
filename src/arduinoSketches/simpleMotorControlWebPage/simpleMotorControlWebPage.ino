@@ -22,6 +22,9 @@
   Turn off motors after short delay so if web client disconnects
   robot doesn't keep moving
 
+	Feb 22 2019 - Michael Shiloh
+	add speed control
+
 */
 
 #include <SoftwareSerial.h>
@@ -32,6 +35,8 @@ const int LEDPin = 13; // the built-in
 
 const int MYFORWARD = 0;
 const int MYREVERSE = 1;
+
+int forwardSpeed = 80; 
 
 char inChar;  // character we will use for messages from the RPi
 
@@ -79,7 +84,7 @@ void loop() {
         digitalWrite(LEDPin, LOW);
         break;
       case 'F':
-        moveForward (80);
+        moveForward (forwardSpeed);
         //delay(800);
         //stopBothMotors ();
         break;
@@ -213,9 +218,15 @@ void stopBothMotors() {
 }
 
 void faster() {
-  Serial.println("Arduino: faster");
+  Serial.print("Arduino: faster: ");
+	forwardSpeed+=10;
+  Serial.print("Speed now at: ");
+  Serial.println(forwardSpeed);
 }
 
 void slower() {
-  Serial.println("Arduino: slower");
+  Serial.println("Arduino: slower: ");
+	forwardSpeed-=10;
+  Serial.print("Speed now at: ");
+  Serial.println(forwardSpeed);
 }
