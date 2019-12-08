@@ -26,7 +26,9 @@ level shifters for interfacing with Arduino
 2 > Required Items \ Set screws $0.00 $0.00
 8 > Required Items \ Bolts and nuts for mounting the tires to the shaft $0.00 $0.00
 **Motor mount tubes**
-4 TD-056-342 Motor Mount Tube - IG32 or IG42 SB $26.00 $104.00
+2 TD-056-342 Motor Mount Tube - IG32 or IG42 SB $26.00 $52.00
+2 motor plates 
+
 
 
 ## Power
