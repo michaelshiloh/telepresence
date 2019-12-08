@@ -15,8 +15,10 @@
 
 **Motors**  
 -	Qty 2 TD-044-240 IG42 24VDC 240 RPM Gear Motor with Encoder $59.95 $119.90  
+
 **Motor controller**  
 -	Qty 1 TE-091-212 Sabertooth Dual 12A Motor Driver $79.99 $79.99  
+
 **Wheel assemblies**  
 - 1 TD-158-008 ATR Wheel Shaft Set Pair 8mm Bore - 6 inch pneumatic $66.32 $66.32  
 - 2 TD-161-006 > Required Items \ Robot Drive Wheel - 6 inch pneumatic tire $0.00 $0.00  
@@ -25,6 +27,7 @@
 - 4 TD-132-050 > Required Items \ Shaft Collar with set screw - 0.50 inch ID $0.00 $0.00  
 - 2 > Required Items \ Set screws $0.00 $0.00  
 - 8 > Required Items \ Bolts and nuts for mounting the tires to the shaft $0.00 $0.00    
+
 **Motor mount tubes**  
 - 2 TD-056-342 Motor Mount Tube - IG32 or IG42 SB $26.00 $52.00  
 - 2 motor plates   
