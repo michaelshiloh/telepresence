@@ -18,18 +18,17 @@
 	(these were quite fast, might try a slower motor next time)   
 - Qty 2 IG42 24VDC 122 RPM Gear Motor with Encoder $61.95 $123.90  
 - Qty 1 TE-183-002 Dual LS7366R Quadrature Encoder Buffer $45.68 
-- Qty 2 TD-053-042 Motor Mount Plate - IG42 $3.45 $6.90
 
 **Motor controller**  
 - Qty 1 TE-091-212 Sabertooth Dual 12A Motor Driver $79.99 $79.99  
 
 **Wheel assemblies**  
-- 1 TD-158-008 ATR Wheel Shaft Set Pair 8mm Bore - 6 inch pneumatic $66.32 $66.32  
-	- This is a pair of 6 inch pneumatic rubber tires with steel rims and a 1/2" steel shaft, 1/2" ID ball bearing for additional support, bored to accept 8mm motor shaft. Includes: 2 pneumatic wheels, shafts, bearings, collars and hardware.
+- Qty 1 TD-158-008 ATR Wheel Shaft Set Pair 8mm Bore - 6 inch pneumatic $66.32 $66.32  
+	This is a pair of 6 inch pneumatic rubber tires with steel rims and a 1/2" steel shaft, 1/2" ID ball bearing for additional support, bored to accept 8mm motor shaft. Includes: 2 pneumatic wheels, shafts, bearings, collars and hardware.
 
 **Motor mount tubes**  
-- 2 TD-056-342 Motor Mount Tube - IG32 or IG42 SB $26.00 $52.00  
-- 2 motor plates   
+- Qty 2 TD-056-342 Motor Mount Tube - IG32 or IG42 SB $26.00 $52.00    
+- Qty 2 TD-053-042 Motor Mount Plate - IG42 $3.45 $6.90
 
 
 
