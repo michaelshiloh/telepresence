@@ -31,8 +31,7 @@
 - Qty 2 TD-056-342 Motor Mount Tube - IG32 or IG42 SB $26.00 $52.00      
 - Qty 2 TD-053-042 Motor Mount Plate - IG42 $3.45 $6.90  
 - Qty 1 TD-166-000 IG32 and IG42 Motor Plate Hardware Kit - $3.95 $7.90  
-- Qty 1 TD-165-308 M3 Steel Mounting Screw, 8mm Length, Pan Head, Phillips  
-	Drive (Pack of 16) $0.89 $1.78  
+- Qty 1 TD-165-412 M4 Steel Mounting Screw, 12mm Length, Pan Head, Phillips Drive (Pack of 16) $1.29 $2.58  
 
 
 
