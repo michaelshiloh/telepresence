@@ -16,7 +16,7 @@
 **Motors**  
 - Qty 2 TD-044-240 IG42 24VDC 240 RPM Gear Motor with Encoder $59.95 $119.90  
 	(these were quite fast, might try a slower motor next time)   
-- Qty 2 IG42 24VDC 122 RPM Gear Motor with Encoder $61.95 $123.90  
+- Qty 2 TD-044-122 IG42 24VDC 122 RPM Gear Motor with Encoder $61.95 $123.90  
 - Qty 1 TE-183-002 Dual LS7366R Quadrature Encoder Buffer $45.68 
 
 **Motor controller**  
