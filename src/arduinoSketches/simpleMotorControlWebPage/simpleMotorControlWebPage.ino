@@ -25,11 +25,21 @@
 	Feb 22 2019 - Michael Shiloh
 	add speed control
 
+	Feb 15 2020 - Michael Shiloh
+	moved transmit pin to free up PWM pins, but has not been tested
+	Also I'm not 100% sure if the new pin is Tx or Rx, since I wasn't
+	paying attention (only one pin is used since I never bothered 
+	wiring up the other, probably Rx)
+
 */
 
 #include <SoftwareSerial.h>
 
+/* old
 SoftwareSerial softwareSerial(10, 11); // RX, TX
+*/
+// new
+SoftwareSerial softwareSerial(8, 12); // RX, TX
 
 const int LEDPin = 13; // the built-in
 
