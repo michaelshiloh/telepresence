@@ -1,8 +1,11 @@
 /*
-  // first attempt at terribly simple web control of motors
-  // based on software serial example (built-in to Arduino)
-  // to communicate with motor controller and interaction engine
-  // to communicate with rPi
+  Very simple robot control using a single letter protocol
+	over the hardware serial port. Motor controller is connected
+	to a software serial port.
+
+	Commands can come from any serial terminal such as the Arduino
+	IDE built-in serial monitor, or from a program running on a
+	Raspberry Pi (e.g. a web server for remote control)
 
   Modification log
 
@@ -11,9 +14,6 @@
 	turns on the motor, but there is a bug in that pressing "LED Off"
 	causes both motors to stutter and not turn off. Also upon reset both
 	motors stutter.
-
-	oh i just noticed that pin 11 is used for both transmission and for
-	a pushbutton (which is not used) which is probably causing conflict
 
 	Nov 9 2018 - Michael Shiloh
 	implemented decent robot control
