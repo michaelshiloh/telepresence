@@ -273,25 +273,12 @@ A simple mounting method is to attach plastic standoffs to a piece of plywood an
 
 1. Choose a base. I used a scrap of plywood.
 
-    
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image3.png "image_tooltip")
-
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 
 ![alt_text](images/image4.png "image_tooltip")
 
 
 2. Attach the motor mounting tubes to the base. The mounting holes in the tubes are very small, I drilled them out for larger bolts. I think I used 5mm bolts.
-
-    
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/image5.png "image_tooltip")
@@ -299,19 +286,11 @@ A simple mounting method is to attach plastic standoffs to a piece of plywood an
 
 3. Attach the motors to the mounting plate, then attach the mounting plate to the tube
 
-    
-
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
+   
 ![alt_text](images/image6.png "image_tooltip")
 
 
 4. Attach the wheels to the axles. The bolts should be on the wheels.
-
-    
-
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/image7.png "image_tooltip")
@@ -332,10 +311,6 @@ A simple mounting method is to attach plastic standoffs to a piece of plywood an
 8. Tighten the setscrew in the locking ring
 9. Add two support castors for stability. 
 
-    
-
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image9.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 
 ![alt_text](images/image9.png "image_tooltip")
 
@@ -349,10 +324,6 @@ A simple mounting method is to attach plastic standoffs to a piece of plywood an
 1. The motors are supplied with a connector. I didn’t have a mating connector so I cut the connector of the motor off and soldered longer wires to the motor. I used 18 AWG although this might be more than necessary. 
 2. Drill a hole somewhere in the base to bring the wires from the motor up to the top of the base
 
-    
-
-<p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image10.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 
 ![alt_text](images/image10.png "image_tooltip")
 
@@ -364,9 +335,6 @@ A simple mounting method is to attach plastic standoffs to a piece of plywood an
 
 ## 
 
-<p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image11.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image11.png "image_tooltip")
 
 
@@ -377,9 +345,6 @@ A simple mounting method is to attach plastic standoffs to a piece of plywood an
 
 1. The motor controller has a metal base. If you mount this to a larger piece of metal it will be able to dissipate more heat and reduce the risk of overheating. I used a couple of scraps of angle aluminum to mount the motor controller
 
-<p id="gdcalert12" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image12.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert13">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image12.png "image_tooltip")
 
 2. The battery pack has a 5.5/2.1mm coax outlet for 12V; I used a coax to screw terminal adapter to attach wires from the battery pack to the motor controller.
@@ -387,14 +352,7 @@ A simple mounting method is to attach plastic standoffs to a piece of plywood an
 4. Connect the wires from the motors to the motor controller. I never bother figuring out which polarity is clockwise or counterclockwise, or which is the right wheel or the left wheel. Hook them up any way and adjust in software.
 
 
-
-<p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image13.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image13.png "image_tooltip")
-
-
-<p id="gdcalert14" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image14.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert15">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/image14.png "image_tooltip")
@@ -407,29 +365,15 @@ A simple mounting method is to attach plastic standoffs to a piece of plywood an
 
 1. I always use a prototyping shield when making connections to Arduino. It is reliable and easy to remove. 
 
-    
-
-<p id="gdcalert15" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image15.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert16">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image15.png "image_tooltip")
 
 
 2. I always use a header rather than soldering wires directly to the prototyping shield so that the shield can be easily removed for modification and repair.
 
-    
-
-<p id="gdcalert16" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image16.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert17">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image16.png "image_tooltip")
 
 
 3. Since communication is one way (from Arduino to Motor Controller), only the transmit wire is necessary, and a ground. Nonetheless, I used a 4 pin header to allow me to add receive data, and to provide 5V from the motor controller, at some later date. But I only connected GND and Tx
-
-    
-
-<p id="gdcalert17" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image17.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert18">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/image17.png "image_tooltip")
@@ -439,16 +383,7 @@ A simple mounting method is to attach plastic standoffs to a piece of plywood an
 
 ## Upper Structure
 
-
-
-<p id="gdcalert18" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image18.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert19">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image18.png "image_tooltip")
-
-
-<p id="gdcalert19" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image19.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert20">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 
 ![alt_text](images/image19.png "image_tooltip")
 
@@ -469,11 +404,6 @@ My principles:
 The upper structure can be anything you chose. I like to keep the center of gravity low for stability, so the batteries usually go on the bottom. I used 4 threaded rods (about 50cm long) to mount a second platform above the first. Then I made a lightweight aluminum structure to hold the monitor, as I wanted this to be at about head height. The Arduino and Raspberry Pi are very light so I decided to mount them right next to the monitor. Batteries for  the Raspberry Pi and its monitor went on the middle platform.
 
 **Power**
-
-
-
-<p id="gdcalert20" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image20.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert21">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 
 ![alt_text](images/image20.png "image_tooltip")
 
@@ -497,11 +427,6 @@ It’s important to provide a stable 5V to the Raspberry Pi of sufficient curren
 
 The Talentcell  battery packs have outputs for 9 and 12 volts, in addition to the 5V USB socket. However if you read the specifications the 12V output can go up to 14.6 volts, which might damage the HDMI monitor. The monitor works fine at 9 volts, so we use that. 
 
-
-
-<p id="gdcalert21" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image21.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert22">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image21.png "image_tooltip")
 
 
@@ -510,29 +435,16 @@ The Talentcell  battery packs have outputs for 9 and 12 volts, in addition to th
 As you can see the 9V output is a smaller coax socket compared to the 12V output. An adapter cable is provided that goes from the smaller coax size to the more common 5.5mm x 2.1mm size, which in fact is the size of the coax socket on the HDMI monitor. If the length of this adapter cable is too short, buy or make an extension cable with a male and female 5.5mm x 2.1mm coax to screw terminals adapters:
 
 
-
-<p id="gdcalert22" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image22.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert23">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image22.png "image_tooltip")
 
 
 Strip the wire just enough to go fully  into the screw terminals (about ¼” or 5mm). If you have exposed wire outside of the screw terminal there is risk of a short circuit.
 
 
-
-<p id="gdcalert23" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image23.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert24">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image23.png "image_tooltip")
 
 
 **Important**: Note that the screw terminal adapters commonly are labeled + and -. This assumes that the center conductor is the positive conductor. While this is the most common, it is certainly not the only way. Always check the orientation on what is providing the power (in this case the battery pack) and what is consuming the power (in this case the HDMI monitor), and then after assembling the cable double check with a multimeter. **A mistake here will likely destroy the HDMI monitor. **
-
-
-
-<p id="gdcalert24" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image24.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert25">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 
 ![alt_text](images/image24.png "image_tooltip")
 
@@ -544,17 +456,7 @@ The motor controller is tolerant of a wide range of voltages and so it can use t
 **With the heavier wire it is more difficult to get all the strands into the screw terminals, but it is vital to do so. A short circuit could cause the battery to overheat dangerously. **After loosening the screws completely, you might need to take a small sharp item (such as a very thin screwdriver or a thin nail) to lift up the metal leaf in the screw terminal
 
 
-
-<p id="gdcalert25" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image25.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert26">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image25.png "image_tooltip")
-
-
-
-
-<p id="gdcalert26" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image26.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert27">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 
 ![alt_text](images/image26.png "image_tooltip")
 
@@ -563,12 +465,7 @@ Note that cutting off any strands that stick out defeats the purpose of using th
 
 Check and double check the polarity before attaching to the battery pack. **A mistake here will likely destroy the motor controller and could cause the battery to overheat dangerously. **
 
-
-
-<p id="gdcalert27" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image27.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert28">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image27.png "image_tooltip")
+![alt_text](images/image28.png "image_tooltip")
 
 
 
@@ -626,8 +523,5 @@ The licensor cannot revoke these freedoms as long as you follow the license term
 
 
 
-<p id="gdcalert28" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image28.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert29">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image28.png "image_tooltip")
+![alt_text](images/image27.png "image_tooltip")
 
