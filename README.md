@@ -37,20 +37,6 @@ How Much
 TBA
 
 
-# To-Do
-
-
-
-1. Photos to each step of the instructions - Deigo: identify which photos are missing
-2. ~~License - michael diego~~
-3. ~~software - michael~~
-4. Final result section: summary, next steps - michael 
-5. ~~Ming Website video: [https://vimeo.com/302513762](https://vimeo.com/302513762)~~
-6. **Updated parts list (prototyping shield) - go over assembly instructions and make sure all parts are here - michael**
-7. ~~Context, motivation~~, problems and timeline - michael
-8. ~~People involved link their githbus or their portfolio - michael~~
-9. ~~Table of contents - diego~~
-10. Move to Github. Michael and Diego to discuss.
 
 
 # Parts & tool choice
@@ -100,11 +86,11 @@ All voltage levels are provided by portable battery packs with USB, 9, and 12 vo
 
 
 
-*   <span style="text-decoration:underline;">Qty 2</span> [TD-044-240 IG42 24VDC 240 RPM Gear Motor with Encoder](https://www.superdroidrobots.com/shop/item.aspx/ig42-24vdc-240-rpm-gear-motor-with-encoder/840/) Unit price: $59.95, Total price: $119.90 \
+*   Qty 2 [TD-044-240 IG42 24VDC 240 RPM Gear Motor with Encoder](https://www.superdroidrobots.com/shop/item.aspx/ig42-24vdc-240-rpm-gear-motor-with-encoder/840/) Unit price: $59.95, Total price: $119.90 \
 (these were quite fast, might try a slower motor next time)
-*   <span style="text-decoration:underline;">Qty 2</span> [TD-044-122 IG42 24VDC 122 RPM Gear Motor with Encoder](https://www.superdroidrobots.com/shop/item.aspx/ig42-24vdc-122-rpm-gear-motor-with-encoder/849/) Unit price: $61.95, Total price: $123.90
-*   <span style="text-decoration:underline;">Qty 1</span> [TE-183-002 Dual LS7366R Quadrature Encoder Buffer](https://www.superdroidrobots.com/shop/item.aspx/dual-ls7366r-quadrature-encoder-buffer/1523/) Total Price: $45.68
-*   <span style="text-decoration:underline;">Qty 2</span> [TE-305-003 IG42 IG52 Encoder Connector](https://www.superdroidrobots.com/shop/item.aspx/ig42-ig52-encoder-connector/2432/) Unit Price: $0.95, Total Price: $1.90
+*   Qty 2 [TD-044-122 IG42 24VDC 122 RPM Gear Motor with Encoder](https://www.superdroidrobots.com/shop/item.aspx/ig42-24vdc-122-rpm-gear-motor-with-encoder/849/) Unit price: $61.95, Total price: $123.90
+*   Qty 1 [TE-183-002 Dual LS7366R Quadrature Encoder Buffer](https://www.superdroidrobots.com/shop/item.aspx/dual-ls7366r-quadrature-encoder-buffer/1523/) Total Price: $45.68
+*   Qty 2 [TE-305-003 IG42 IG52 Encoder Connector](https://www.superdroidrobots.com/shop/item.aspx/ig42-ig52-encoder-connector/2432/) Unit Price: $0.95, Total Price: $1.90
 
 **Motor controller**
 
@@ -138,15 +124,14 @@ Power
 
 
 
-    *   <span style="text-decoration:underline;">Qty 1</span> [Generic USB A/B](https://store.arduino.cc/usb-2-0-cable-type-a-b) (Raspberry Pi to Arduino) Total Price: $2.49
-    *   <span style="text-decoration:underline;">Qty 1</span> [Generic USB A to Micro B](https://www.amazon.com/AmazonBasics-Male-Micro-Cable-Black/dp/B0711PVX6Z/) (Battery pack to Raspberry Pi) Total Price: $5.26
-    *   <span style="text-decoration:underline;">Qty 1</span> [HDMI cable](https://www.adafruit.com/product/608) Total Price: $4.95
-    *   2.1mm male coax to screw terminal adapter + 2.1mm female coax to screw terminal adapter - [such as these](https://www.amazon.com/dp/B01J1WZENK/ref=sspa_dk_detail_2?psc=1&pd_rd_i=B01J1WZENK&pd_rd_w=MeYgu&pf_rd_p=48d372c1-f7e1-4b8b-9d02-4bd86f5158c5&pd_rd_wg=qCV5S&pf_rd_r=15QY18EMK4Y0FNANHFTF&pd_rd_r=6d551262-0fe1-4295-a5bd-344e14ef2694&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyV0tMNTIxQVhYQjJTJmVuY3J5cHRlZElkPUEwNDIwMDc4WEQ2WFZGRlFIQjRIJmVuY3J5cHRlZEFkSWQ9QTA5NzA4ODcyVFZXTEFTVUw2QjJRJndpZGdldE5hbWU9c3BfZGV0YWlsJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==). Total Price: $7.99
-    *   <span style="text-decoration:underline;">Qty 2</span> [Male header pins](https://www.amazon.com/dp/B07BXDYTBP/ref=sr_1_9?dchild=1&keywords=male+header+pins&qid=1599386779&sr=8-9) (this is a set of 36) Total Price: $7.99
-    *   <span style="text-decoration:underline;">Qty 2</span> [Female header pins](https://www.amazon.com/Haobase-2-54mm-Straight-Single-Headers/dp/B01DLX6RSQ/ref=sr_1_5?dchild=1&keywords=female+header+pins&qid=1599386828&sr=8-5) Total Price: $5.60
+*   <span style="text-decoration:underline;">Qty 1</span> [Generic USB A/B](https://store.arduino.cc/usb-2-0-cable-type-a-b) (Raspberry Pi to Arduino) Total Price: $2.49
+*   <span style="text-decoration:underline;">Qty 1</span> [Generic USB A to Micro B](https://www.amazon.com/AmazonBasics-Male-Micro-Cable-Black/dp/B0711PVX6Z/) (Battery pack to Raspberry Pi) Total Price: $5.26
+*   <span style="text-decoration:underline;">Qty 1</span> [HDMI cable](https://www.adafruit.com/product/608) Total Price: $4.95
+*   2.1mm male coax to screw terminal adapter + 2.1mm female coax to screw terminal adapter - [such as these](https://www.amazon.com/dp/B01J1WZENK/ref=sspa_dk_detail_2?psc=1&pd_rd_i=B01J1WZENK&pd_rd_w=MeYgu&pf_rd_p=48d372c1-f7e1-4b8b-9d02-4bd86f5158c5&pd_rd_wg=qCV5S&pf_rd_r=15QY18EMK4Y0FNANHFTF&pd_rd_r=6d551262-0fe1-4295-a5bd-344e14ef2694&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyV0tMNTIxQVhYQjJTJmVuY3J5cHRlZElkPUEwNDIwMDc4WEQ2WFZGRlFIQjRIJmVuY3J5cHRlZEFkSWQ9QTA5NzA4ODcyVFZXTEFTVUw2QjJRJndpZGdldE5hbWU9c3BfZGV0YWlsJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==). Total Price: $7.99
+*   <span style="text-decoration:underline;">Qty 2</span> [Male header pins](https://www.amazon.com/dp/B07BXDYTBP/ref=sr_1_9?dchild=1&keywords=male+header+pins&qid=1599386779&sr=8-9) (this is a set of 36) Total Price: $7.99
+*   <span style="text-decoration:underline;">Qty 2</span> [Female header pins](https://www.amazon.com/Haobase-2-54mm-Straight-Single-Headers/dp/B01DLX6RSQ/ref=sr_1_5?dchild=1&keywords=female+header+pins&qid=1599386828&sr=8-5) Total Price: $5.60
 
-### 
-Miscellaneous
+### Miscellaneous
 
 *   <span style="text-decoration:underline;">Qty 2</span> Castor wheels: generic hardware store. Mine are about 2” diameter. 
 *   Zip ties
@@ -175,20 +160,7 @@ Webcam and Microphone are attached to the Raspberry Pi via USB. Loudspeaker and 
 
 ## Wiring diagram
 
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
-
-
-
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
+![alt_text](images/image23.png "image_tooltip")
 
 
 **Raspberry Pi software**
@@ -273,7 +245,7 @@ A simple mounting method is to attach plastic standoffs to a piece of plywood an
 
 1. Choose a base. I used a scrap of plywood.
 
-![alt_text](images/image3.png "image_tooltip")
+![alt_text](images/image5.png "image_tooltip")
 
 ![alt_text](images/image4.png "image_tooltip")
 
@@ -281,19 +253,19 @@ A simple mounting method is to attach plastic standoffs to a piece of plywood an
 2. Attach the motor mounting tubes to the base. The mounting holes in the tubes are very small, I drilled them out for larger bolts. I think I used 5mm bolts.
 
 
-![alt_text](images/image5.png "image_tooltip")
+![alt_text](images/image15.png "image_tooltip")
 
 
 3. Attach the motors to the mounting plate, then attach the mounting plate to the tube
 
    
-![alt_text](images/image6.png "image_tooltip")
+![alt_text](images/image14.png "image_tooltip")
 
 
 4. Attach the wheels to the axles. The bolts should be on the wheels.
 
 
-![alt_text](images/image7.png "image_tooltip")
+![alt_text](images/image6.png "image_tooltip")
 
 
 5. Slip on the locking rings and a bearing in the right order
@@ -304,7 +276,7 @@ A simple mounting method is to attach plastic standoffs to a piece of plywood an
 <p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image8.png "image_tooltip")
+![alt_text](images/image22.png "image_tooltip")
 
 
 7. Slide the bearing into the hole on the mounting tube and slide the locking ring to hold the bearing in place
@@ -312,7 +284,7 @@ A simple mounting method is to attach plastic standoffs to a piece of plywood an
 9. Add two support castors for stability. 
 
 
-![alt_text](images/image9.png "image_tooltip")
+![alt_text](images/image7.png "image_tooltip")
 
 
 
@@ -325,7 +297,7 @@ A simple mounting method is to attach plastic standoffs to a piece of plywood an
 2. Drill a hole somewhere in the base to bring the wires from the motor up to the top of the base
 
 
-![alt_text](images/image10.png "image_tooltip")
+![alt_text](images/image25.png "image_tooltip")
 
 
 3. Use zipties as necessary to do two important things:
@@ -345,17 +317,17 @@ A simple mounting method is to attach plastic standoffs to a piece of plywood an
 
 1. The motor controller has a metal base. If you mount this to a larger piece of metal it will be able to dissipate more heat and reduce the risk of overheating. I used a couple of scraps of angle aluminum to mount the motor controller
 
-![alt_text](images/image12.png "image_tooltip")
+![alt_text](images/image1.png "image_tooltip")
 
 2. The battery pack has a 5.5/2.1mm coax outlet for 12V; I used a coax to screw terminal adapter to attach wires from the battery pack to the motor controller.
 3. **Double, triple, and quadruple check the polarity of the voltage from the battery pack and the screw terminals on the motor controller!!! **Don’t trust the + and - markings on the coax/screw terminal adapter - there is no way it can know what polarity the battery pack uses!
 4. Connect the wires from the motors to the motor controller. I never bother figuring out which polarity is clockwise or counterclockwise, or which is the right wheel or the left wheel. Hook them up any way and adjust in software.
 
 
-![alt_text](images/image13.png "image_tooltip")
+![alt_text](images/image12.png "image_tooltip")
 
 
-![alt_text](images/image14.png "image_tooltip")
+![alt_text](images/image20.png "image_tooltip")
 
 
 
@@ -365,27 +337,27 @@ A simple mounting method is to attach plastic standoffs to a piece of plywood an
 
 1. I always use a prototyping shield when making connections to Arduino. It is reliable and easy to remove. 
 
-![alt_text](images/image15.png "image_tooltip")
+![alt_text](images/image21.png "image_tooltip")
 
 
 2. I always use a header rather than soldering wires directly to the prototyping shield so that the shield can be easily removed for modification and repair.
 
-![alt_text](images/image16.png "image_tooltip")
+![alt_text](images/image8.png "image_tooltip")
 
 
 3. Since communication is one way (from Arduino to Motor Controller), only the transmit wire is necessary, and a ground. Nonetheless, I used a 4 pin header to allow me to add receive data, and to provide 5V from the motor controller, at some later date. But I only connected GND and Tx
 
 
-![alt_text](images/image17.png "image_tooltip")
+![alt_text](images/image19.png "image_tooltip")
 
 
 
 
 ## Upper Structure
 
-![alt_text](images/image18.png "image_tooltip")
+![alt_text](images/image2.png "image_tooltip")
 
-![alt_text](images/image19.png "image_tooltip")
+![alt_text](images/image27.png "image_tooltip")
 
 
 My principles:
@@ -405,7 +377,7 @@ The upper structure can be anything you chose. I like to keep the center of grav
 
 **Power**
 
-![alt_text](images/image20.png "image_tooltip")
+![alt_text](images/image3.png "image_tooltip")
 
 
 It’s important to provide a stable 5V to the Raspberry Pi of sufficient current. It’s always smart to keep motor voltage separate from any digital electronics. I used a separate battery pack for the monitor because I wasn’t sure how quickly it would drain the battery, but you could probably share one battery pack between the Raspberry Pi and the monitor. Arduino doesn’t need its own power supply because it gets it from the Rasbperry Pi via the USB cable. In the end I used three identical battery packs but you could probably save a bit of money by adjusting the battery capacity so they all need charging at about the same time. Of course this depends on how much driving around you are doing. Of course if you have different battery packs make sure you charge each with the right charger. I always label my chargers immediately when I receive them to avoid costly mistakes.
@@ -427,7 +399,7 @@ It’s important to provide a stable 5V to the Raspberry Pi of sufficient curren
 
 The Talentcell  battery packs have outputs for 9 and 12 volts, in addition to the 5V USB socket. However if you read the specifications the 12V output can go up to 14.6 volts, which might damage the HDMI monitor. The monitor works fine at 9 volts, so we use that. 
 
-![alt_text](images/image21.png "image_tooltip")
+![alt_text](images/image17.png "image_tooltip")
 
 
 (picture of outputs of Talentcell  battery packs)
@@ -435,18 +407,18 @@ The Talentcell  battery packs have outputs for 9 and 12 volts, in addition to th
 As you can see the 9V output is a smaller coax socket compared to the 12V output. An adapter cable is provided that goes from the smaller coax size to the more common 5.5mm x 2.1mm size, which in fact is the size of the coax socket on the HDMI monitor. If the length of this adapter cable is too short, buy or make an extension cable with a male and female 5.5mm x 2.1mm coax to screw terminals adapters:
 
 
-![alt_text](images/image22.png "image_tooltip")
+![alt_text](images/image28.png "image_tooltip")
 
 
 Strip the wire just enough to go fully  into the screw terminals (about ¼” or 5mm). If you have exposed wire outside of the screw terminal there is risk of a short circuit.
 
 
-![alt_text](images/image23.png "image_tooltip")
+![alt_text](images/image16.png "image_tooltip")
 
 
 **Important**: Note that the screw terminal adapters commonly are labeled + and -. This assumes that the center conductor is the positive conductor. While this is the most common, it is certainly not the only way. Always check the orientation on what is providing the power (in this case the battery pack) and what is consuming the power (in this case the HDMI monitor), and then after assembling the cable double check with a multimeter. **A mistake here will likely destroy the HDMI monitor. **
 
-![alt_text](images/image24.png "image_tooltip")
+![alt_text](images/image13.png "image_tooltip")
 
 
 **Motor Controller Power**
@@ -456,16 +428,16 @@ The motor controller is tolerant of a wide range of voltages and so it can use t
 **With the heavier wire it is more difficult to get all the strands into the screw terminals, but it is vital to do so. A short circuit could cause the battery to overheat dangerously. **After loosening the screws completely, you might need to take a small sharp item (such as a very thin screwdriver or a thin nail) to lift up the metal leaf in the screw terminal
 
 
-![alt_text](images/image25.png "image_tooltip")
+![alt_text](images/image24.png "image_tooltip")
 
-![alt_text](images/image26.png "image_tooltip")
+![alt_text](images/image18.png "image_tooltip")
 
 
 Note that cutting off any strands that stick out defeats the purpose of using the thicker wire.
 
-Check and double check the polarity before attaching to the battery pack. **A mistake here will likely destroy the motor controller and could cause the battery to overheat dangerously. **
+Check and double check the polarity before attaching to the battery pack. **A mistake here will likely destroy the motor controller and could cause the battery to overheat dangerously.**
 
-![alt_text](images/image28.png "image_tooltip")
+![alt_text](images/image9.png "image_tooltip")
 
 
 
@@ -523,5 +495,5 @@ The licensor cannot revoke these freedoms as long as you follow the license term
 
 
 
-![alt_text](images/image27.png "image_tooltip")
+![alt_text](images/image26.png "image_tooltip")
 
