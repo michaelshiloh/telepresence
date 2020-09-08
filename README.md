@@ -12,7 +12,7 @@
 *   License
 
 
-Why
+**Why**
 
 Robotic research projects are typically expensive and complicated, and therefore, access to them is highly restricted. Are areas of exploration similarly limited to that proposed by the select group of  researchers? 
 
@@ -20,7 +20,7 @@ The purpose of this project is to widen the pool of participants by creating a s
 
 By publishing this documentation, our hope is that others might duplicate all or some of this project, make modifications and improvements, further this approach of inviting broader participation in complicated projects, and in general make use of any material here. Therefore, this work is published with the (TBA) license
 
-What
+**What**
 
 This project describes a telepresence device, i.e, the ability to virtually be at some remote location. Camera, microphone, loudspeaker, and screen project you to the remote location, and project the remote location to your web browser. Navigation controls on your web browser allow you to move the device to different locations and to turn to face different directions.
 
@@ -28,11 +28,11 @@ Technically, this is a simple motorized platform (which I will call a "robot" he
 
 The computer runs a web server. Remote visitors access the robot's URL (e.g. from a browser on their phone) and are presented with a basic video chat system: the image from the camera on the phone is visible on the screen of the robot, and the image from the camera on the robot is visible on the screen of the phone._ _Similarly for the audio. In addition, there is a control interface for the mobile platform visible on the phone, which allows the remote visitor to drive the robot around.
 
-How Long
+**How Long**
 
 This project was built over a long period of time, not working continuously. With all the necessary parts and tools on hand, construction of the physical platform should take a few days.
 
-How Much
+**How Much**
 
 TBA
 
@@ -320,7 +320,7 @@ A simple mounting method is to attach plastic standoffs to a piece of plywood an
 ![alt_text](images/image1.png "image_tooltip")
 
 2. The battery pack has a 5.5/2.1mm coax outlet for 12V; I used a coax to screw terminal adapter to attach wires from the battery pack to the motor controller.
-3. **Double, triple, and quadruple check the polarity of the voltage from the battery pack and the screw terminals on the motor controller!!! **Don’t trust the + and - markings on the coax/screw terminal adapter - there is no way it can know what polarity the battery pack uses!
+3. **Double, triple, and quadruple check the polarity of the voltage from the battery pack and the screw terminals on the motor controller!!!** Don’t trust the + and - markings on the coax/screw terminal adapter - there is no way it can know what polarity the battery pack uses!
 4. Connect the wires from the motors to the motor controller. I never bother figuring out which polarity is clockwise or counterclockwise, or which is the right wheel or the left wheel. Hook them up any way and adjust in software.
 
 
@@ -416,7 +416,7 @@ Strip the wire just enough to go fully  into the screw terminals (about ¼” or
 ![alt_text](images/image16.png "image_tooltip")
 
 
-**Important**: Note that the screw terminal adapters commonly are labeled + and -. This assumes that the center conductor is the positive conductor. While this is the most common, it is certainly not the only way. Always check the orientation on what is providing the power (in this case the battery pack) and what is consuming the power (in this case the HDMI monitor), and then after assembling the cable double check with a multimeter. **A mistake here will likely destroy the HDMI monitor. **
+**Important**: Note that the screw terminal adapters commonly are labeled + and -. This assumes that the center conductor is the positive conductor. While this is the most common, it is certainly not the only way. Always check the orientation on what is providing the power (in this case the battery pack) and what is consuming the power (in this case the HDMI monitor), and then after assembling the cable double check with a multimeter. **A mistake here will likely destroy the HDMI monitor.**
 
 ![alt_text](images/image13.png "image_tooltip")
 
@@ -425,7 +425,7 @@ Strip the wire just enough to go fully  into the screw terminals (about ¼” or
 
 The motor controller is tolerant of a wide range of voltages and so it can use the 12V output. Using the same 5.5mm x 2.1mm coax to screw terminal adapter, add wires of suitable length. Since the motors might consume a lot of current, use heavier wires. The wires that I’m using are probably heavier than necessary, but it’s what I had on hand. 
 
-**With the heavier wire it is more difficult to get all the strands into the screw terminals, but it is vital to do so. A short circuit could cause the battery to overheat dangerously. **After loosening the screws completely, you might need to take a small sharp item (such as a very thin screwdriver or a thin nail) to lift up the metal leaf in the screw terminal
+**With the heavier wire it is more difficult to get all the strands into the screw terminals, but it is vital to do so. A short circuit could cause the battery to overheat dangerously.** After loosening the screws completely, you might need to take a small sharp item (such as a very thin screwdriver or a thin nail) to lift up the metal leaf in the screw terminal
 
 
 ![alt_text](images/image24.png "image_tooltip")
